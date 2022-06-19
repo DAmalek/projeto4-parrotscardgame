@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(209, 250, 170);
 }
@@ -14,15 +17,19 @@ header{
     
 }
 .container{
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 30px;
+    
+    
 }
 .card{
     width: 120px;
     height: 150px;
     border-radius: 7px;
     
-    margin-right: 40px;
+    margin-right: 0px;
     cursor: pointer;
     position: relative;
     
@@ -38,7 +45,7 @@ header{
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    transition: transform 400ms ease-out;
+    transition: transform 400ms ease-in-out;
 }
 .papa{
     width: 100px;
