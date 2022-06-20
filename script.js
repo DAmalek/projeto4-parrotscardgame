@@ -13,3 +13,15 @@ function userBurro(){
 }
 userBurro()
 
+function virada(elemento){
+    const virado = elemento.classList.contains("visible");
+
+    if (virado) {
+        elemento.classList.remove("visible")
+    } else {
+        elemento.classList.add("visible")
+    }
+    
+
+
+}
